@@ -1,0 +1,299 @@
+body{
+    background-color: #333;
+    margin:0;
+    color:whitesmoke;
+    display: block;
+
+    
+         
+        min-height: 100vh;
+}
+ h1{
+    font-family: aldrich,serif;
+    margin:20px;
+    text-align:center;
+    color:whitesmoke;
+    font-size: 50px;
+    font-weight: bold;
+}
+#intro h2{
+    font-family: aldrich,serif;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    
+    
+
+    
+    
+}
+h2{
+    font-family: aldrich,serif;
+}
+nav{
+    background-color: #333;
+    display: flex;
+    padding: 10px;
+    margin:auto;
+    text-align: center;
+    width: 100%;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center;
+    position:sticky;
+    top:0;
+    animation:navbar linear both;
+    animation-timeline:scroll(root block);
+    animation-range: 0 200px;
+    z-index: 1;
+
+   
+}
+@keyframes navbar{
+    to{
+        background-color: #fdfafa62 ;
+        backdrop-filter: blur(5px);
+        font-size: 15px;
+        gap: 10px;
+
+    }
+
+    
+}
+nav button {
+    background-color: bisque !important;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    animation: navbar linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+    overflow: hidden; /* Evita efectos raros */
+}
+
+/* Línea debajo del botón */
+nav button::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: brown;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+/* Animación del subrayado al hacer hover */
+nav button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+   
+   
+
+section,aside,article{
+    background-color: #ffe4c4;
+    padding:10px;
+    color:black;
+    font-family: "Markazi Text", serif;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0,7) ;
+    
+}
+main{
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin:0 auto;
+    
+}
+h3{
+    font-family: "Markazi Text", serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+section article{
+    font-size: 27px;
+    font-family: "Markazi Text", serif;
+}
+
+#intro{
+    display:flex;
+
+}
+#descripcion{
+    text-align:center;
+    align-items: center;
+    grid-column: -1;
+
+
+    
+}
+#proyectos{
+    display:none;
+}
+#mapacheyo{
+    height:400px;
+    width:400px;
+  display:block;
+  margin:0;
+  align-items: center;
+  justify-content: top;
+  
+}
+#logos{
+   display:flex;
+   justify-content: space-evenly;
+   margin-top: 20px;
+   align-items: center;
+   margin-top: 30   px;
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    &:hover{
+        transform: scale(1.2);
+        color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 2px solid #794d13; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    }
+}
+.logo1{
+    width: 75px;
+    height: 75px;
+    &:hover{
+        transform: scale(1.2);
+        color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 2px solid #794d13; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    }
+}
+.logo2{
+    &:hover{
+        transform: scale(1.1);
+        color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 2px solid #794d13; /* Borde azul */
+    /* Bordes redondeados */
+    }
+    
+}   
+#logoli:hover{
+    border-radius: 50%;
+}
+
+
+#container-tec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.tech img {
+    width: 60px; /* Ajusta el tamaño de las imágenes según necesites */
+    height: auto;
+}
+
+.tech p {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.tech img {
+    width: 50px;
+    height: auto;
+    
+}
+
+.tech img:hover {
+
+    scale:1.4;
+    color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 2px solid #794d13; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+}
+ section#experiencia{
+    display: none !important;
+}
+section#certificaciones{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+  align-items: flex-start;
+  border: 1px solid black;
+    
+}
+#certificaciones img{
+    max-width: 50vh;
+    width: 50%;
+    border:2px solid black;
+}
+
+
+.items{
+   display:flex;
+   align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-evenly; /* Texto a la izquierda, imagen a la derecha */
+    gap: 10px;
+     font-size: 24px; /* Espacio entre la imagen y el texto */
+    
+  
+    padding: 15px;;
+}
+
+.ampliable  {
+    flex: 1; /* Ocupa el espacio disponible */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+.items img{
+    flex:1;
+    max-width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    display: block;
+}
+@keyframes reveal {
+   from{ opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+.ampliable{
+    cursor:pointer;
+}
+section {
+    opacity: 1;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 30%;
+}
+section#certificaciones{
+    opacity: 1;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 10%;
+}
