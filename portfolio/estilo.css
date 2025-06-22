@@ -298,7 +298,7 @@ section {
     opacity: 1;
     animation: reveal linear both;
     animation-timeline: view();
-    animation-range: entry 30% cover 30%;
+    animation-range: entry 10% cover 30%;
 }
 section#certificaciones{
     opacity: 1;
@@ -317,6 +317,7 @@ section#certificaciones{
     justify-content: space-evenly;
 }
 #info-contacto div{
+    opacity:1;
     display: flex;
     flex-direction: row;
     align-items: center;
