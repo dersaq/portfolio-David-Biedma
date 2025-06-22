@@ -22,9 +22,9 @@
  
      <nav id="navegador">
         <button onclick="location.href='#intro'">Inicio</button>
-        <button onclick="location.href='#proyectos'">Proyectos</button>
+       <!--- <button display="none" onclick="location.href='#proyectos'">Proyectos</button>-->
         <button onclick="location.href='#lista-tec'">Tecnologías</button>
-        <button onclick="location.href='#experiencia'">Experiencia</button>
+       <!-- <button onclick="location.href='#experiencia'">Experiencia</button>-->
         <button onclick="location.href='#certificaciones'">Certificaciones</button>
         <button onclick="location.href='#bio'">Sobre mi</button>
         <button onclick="location.href='#Contacto'">Contacto</button>
@@ -49,11 +49,15 @@
     <div id="logos">
     <div ><a  target="_blank" href="https://www.instagram.com/dersaq_/"><img class="logo" src="img/insta.png"></div></a>
     <div><a target="_blank" href="https://www.linkedin.com/in/david-biedma-mesa-9b0382164/"><img class="logo1" src="img/linke.png"></div></a>
-    <div class="logo2"><button>descargar CV</button></div>
-    </div>
-    <hr>
+   <div class="logo2">
+    <a target="_blank" href="img/DavidBiedmaCV.pdf" download="David_Biedma_CV.pdf">
+        <button>descargar CV</button>
+    </a>
+</div>
+    </div >
+    
     </article>
-    <div ><img id="mapacheyo"src="img/mapachegamer.jpg" ></div>
+    <div id="div-foto"><img id="mapacheyo"src="img/yo3.png" ></div>
 
 </section>
 
@@ -293,15 +297,20 @@
         superior de desarrollo web.<br>
         No considero pues el haber perdido el tiempo estudiando biología, es más pienso que me ha
         ofrecido muchas cualidades y conocimientos que son universales en cualquier ambito como pueden ser
-        <strong>El pensamiento crítico y analitico, método cientifico y experimental, una gran adaptabilidad</strong>
+        <strong>El pensamiento crítico y analitico, método cientifico y experimental y  una gran adaptabilidad</strong> entre otras.
+        Me gustaria dedicarme por completo al desarrollo web y a la creacion de paginas web responsivas y dinamicas.
     </article>
 
 
 
 </section>
-<section id="contacto">
+<section id="Contacto">
 <header><h2>contactame</h2></header>
-<div>aqui pondre formas de contactarme</div>
+<div id="info-contacto">
+   <div><img class="icons" src="img/phone.svg"><p>644950494</p></div> 
+   <div><img class="icons" src="img/email.svg"><p>davidbiedmamesa@gmail.com</p></div> 
+
+</div>
 </section>
 </main>
 <footer><p>&copy; 2025 David - Desarrollador Web</p></footer>
