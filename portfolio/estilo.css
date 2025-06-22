@@ -135,14 +135,18 @@ section article{
     grid-column: -1;
 
 
-    
+
+}
+.icons{
+    width: 30px;
+    height: 30px;
 }
 #proyectos{
     display:none;
 }
 #mapacheyo{
     height:400px;
-    width:400px;
+    width:250px;
   display:block;
   margin:0;
   align-items: center;
@@ -157,7 +161,12 @@ section article{
    margin-top: 30   px;
 
 }
-
+#div-foto {
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
 .logo{
     width: 50px;
     height: 50px;
@@ -296,4 +305,20 @@ section#certificaciones{
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 10%;
+}
+#info-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:10px;
+    font-size: 27px;
+    font-family: "Markazi Text", serif;
+    align-content: center;
+    justify-content: space-evenly;
+}
+#info-contacto div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px
 }
