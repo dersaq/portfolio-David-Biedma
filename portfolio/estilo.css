@@ -162,8 +162,11 @@ section article{
 
 }
 #div-foto {
+    
     display: flex;
     margin:auto;
+    witdh:100%;
+    height:auto;
     align-items: center;
     justify-content: center;
 }
@@ -356,4 +359,5 @@ section#certificaciones{
   text-decoration: none;
   cursor: pointer;
 }
+
 
